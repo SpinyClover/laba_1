@@ -12,7 +12,7 @@ FileManager::~FileManager() {
 }
 
 void FileManager::Save(List& list) {
-    system("cls");
+    system("clear");
     if (list.IsEmpty()) {
         throw MyException("List is empty");
     }
@@ -63,7 +63,7 @@ List& FileManager::Read(List& list) {
         int inc = list.GetCount() + 1;
         list.SetCount(inc);
     }
-    system("cls");
+    
     file.clear();
     cout << "Complete!" << endl;
     return *this;

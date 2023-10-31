@@ -10,7 +10,7 @@ List::~List(){
 }
 
 List& List::Del() {
-    system("cls");
+    
     if (this->IsEmpty()) {
         throw MyException("List is empty");
     }
@@ -52,7 +52,7 @@ List& List::Del() {
 }
 
 List& List::Del(int cnt) {
-    system("cls");
+    
     if (this->IsEmpty()) {
         throw MyException("List is empty");
     }
@@ -85,7 +85,7 @@ void List::DelAll() {
 }
 
 List& List::operator++() {
-    system("cls");
+    
     string name, bDay, age, parentData, spousData, childData, deathDay;
     cout << "===Add familly member====" << endl;
     cout << "!Press ENTER if there is no data !" << endl;
@@ -159,7 +159,7 @@ void List::AddElem(Element* elem) {
 }
 
 List& List::Edit() {
-    system("cls");
+    
     if (this->IsEmpty()) {
         throw MyException("List is empty");
     }
@@ -269,7 +269,7 @@ List& List::Edit() {
     }
     default:
     {
-        system("cls");
+        
         cout << "Incorrected number" << endl;
         break;
     }
@@ -284,7 +284,6 @@ List& List::Edit() {
 }
 
 void List::Print() {
-    system("cls");
     Element* temp = this->Head;
     if (this->IsEmpty()) {
         throw MyException("List is empty");
@@ -295,7 +294,6 @@ void List::Print() {
     while (cnt != 0) {
         cout << "Name: " << temp->data->GetName() << endl << "Bday: " << temp->data->GetBDay() << "   " << "Age: " << temp->data->GetAge() << endl << "Parent data: " << temp->data->GetParentData()
             << endl << "Spous data: " << temp->data->GetSpousData() << endl << "Death day:" << temp->data->GetDeathDay() << endl << "Child data: " << temp->data->GetChildData() << endl;
-        // Переходим на следующий элемент
         temp = temp->pNext;
         cnt--;
         cout << "===================" << endl;
@@ -303,7 +301,7 @@ void List::Print() {
 }
 
 List& List::RemoveSimilar() {
-    system("cls");
+    
     if (this->IsEmpty()) {
     throw MyException("List is empty");
     }

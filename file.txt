@@ -1,11 +1,4 @@
-4
-Ivanov Dmitry Georgevich
-19.02.1910
-113
--
-Ivanova Anna Olegovna
-03.01.1970
-Ivanov Kirill Dmitreevich
+3
 Ivanov Kirill Dmitreevich
 21.12.1933
 89
